@@ -412,3 +412,58 @@ body{
 .footer__links a:hover {
     border-bottom: 2px solid mediumvioletred;/* Blue hover effect */
 }
+
+/* Media query for mobile */
+@media screen and (max-width: 767px) {
+    .powered-ai,.ad-overlay,.categories__s3,.ad-image,.ad-image button{
+        display: none;
+
+    }
+    
+    /* Base styles for mobile (set the default for mobile devices) */
+.container-s1, .creators-s1 {
+    width: 100%;  /* Full width on mobile */
+    margin: 0;    /* Reset margin */
+    padding: 0;   /* Reset padding */
+    box-sizing: border-box; /* Ensure padding and border don't affect width */
+}
+
+.container-s1 img, .creators-s1 img {
+    width: 60%;  /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 120px;
+    margin-right: 40px; 
+}
+
+/* For Travel Creators section */
+.Travel__creators {
+    display: flex;
+    flex-wrap: wrap; /* Allow the creators to wrap into new lines */
+    justify-content: center;  /* Center them */
+    gap: 20px;  /* Add some spacing between items */
+}
+
+.creators-s1 {
+    display: flex;  /* Allow flexbox layout */
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;  /* Center the content */
+    justify-content: center;
+    margin-bottom: 20px; /* Space between each creator section */
+}
+    .container-s1 {
+        margin-bottom: 15px;  /* Add space below container items */
+    }
+
+    .creators-s1 {
+        width: 65%;  
+        height: auto;
+        margin-bottom: 15px;  /* Space between each creator */
+    }
+
+    /* Travel creators image */
+    .creators-s1 img {
+        width: 100%;  /* Fit the images to the container */
+        height: auto;  /* Maintain aspect ratio */
+    }
+}
+
